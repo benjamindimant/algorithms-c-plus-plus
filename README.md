@@ -2,6 +2,8 @@
 
 This repository provides a set of algorithms and data structures implemented using C++. Algorithms implemented are based on those listed in the Introduction To Algorithms book.
 
+To run any of the algorithms, use `. run.sh /path/to/file`.
+
 ## Fundamental Approaches
 
 ### Divide and Conquer

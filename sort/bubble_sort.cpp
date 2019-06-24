@@ -1,11 +1,7 @@
 #include <iostream>
+#include "../util/util.hpp"
 using namespace std;
-
-void swap(int *x, int *y) {
-  int temp = *x;
-  *x = *y;
-  *y = temp;
-}
+using namespace util;
 
 void bubble_sort(int arr[], int n) {
   for (int i = 0; i < n - 1; ++i) {
@@ -15,13 +11,6 @@ void bubble_sort(int arr[], int n) {
       }
     }
   }
-}
-
-void print_array(int arr[], int size) {
-  for (int i = 0; i < size; i++) {
-    cout << arr[i] << " ";
-  }
-  cout << "\n";
 }
 
 int main() {

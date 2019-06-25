@@ -8,7 +8,7 @@ To run any of the algorithms, use `. run.sh /path/to/file`.
 
 ### Divide and Conquer
 
-* Fibonacci [Recurison]
+* Fibonacci [Recursion]
 
 ### Dynamic Programming
 

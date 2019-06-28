@@ -6,6 +6,7 @@ struct Node {
   Node *next;
 };
 
+template <class T>
 class LinkedList {
   public:
     ~LinkedList() {
@@ -17,7 +18,7 @@ class LinkedList {
       }
     }
 
-    void insert(int x) {
+    void insert(T x) {
       Node *current = start;
       while (current->next != NULL) {
         current = current->next;
@@ -27,7 +28,7 @@ class LinkedList {
       current->next = new_node;
     }
 
-    void remove(int x) { 
+    void remove(T x) { 
       Node *prev;
       Node *current = start;
       while (current != nullptr && current->val != x) {
@@ -61,7 +62,7 @@ class LinkedList {
 };
 
 int main() {
-  LinkedList linked_list = LinkedList();
+  LinkedList<int> linked_list = LinkedList<int>();
   int option = 0;
   int input;
   do {

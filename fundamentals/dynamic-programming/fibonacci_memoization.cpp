@@ -1,9 +1,12 @@
 #include <iostream>
 using namespace std;
-int memoize[11];
 
 // Start at the end and go backwards
 int fibonacci(int n) {
+  int memoize[n + 1];
+  for (int i = 0; i < n + 1; ++i) {
+    memoize[i] = -1;
+  }
   if (memoize[n] == -1) {
     if (n <= 1) {
       memoize[n] = n;
@@ -15,8 +18,5 @@ int fibonacci(int n) {
 }
 
 int main() {
-  for (int i = 0; i < 11; ++i) {
-    memoize[i] = -1;
-  }
   cout << fibonacci(10) << "\n";
 }
